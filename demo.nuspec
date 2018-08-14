@@ -13,6 +13,6 @@
     <tags>Tag1</tags>
   </metadata>
   <files>
-    <file src="abc1.txt" target="lib" />
+    <file src="*.txt" target="lib" />
 	</files>
 </package>
