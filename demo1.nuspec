@@ -11,6 +11,12 @@
     <releaseNotes>Demo1</releaseNotes>
     <copyright>Copyright 2018 Peraso</copyright>
     <tags>Tag1</tags>
+
+    <dependencies>
+      <group>
+        <dependency id="demo2" version="22.0.0" />
+      </group>
+	  </dependencies>
   </metadata>
   
   <files>
