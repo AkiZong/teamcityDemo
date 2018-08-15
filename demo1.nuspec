@@ -14,7 +14,7 @@
 
     <dependencies>
       <group>
-        <dependency id="demo2" version="22.0.0" />
+        <dependency id="demo2" />
       </group>
 	  </dependencies>
   </metadata>
