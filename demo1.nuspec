@@ -16,3 +16,10 @@
     <file src="*.txt" target="lib" />
 	</files>
 </package>
+
+<dependencies> 
+   <group>
+      <dependency id="demo2" />
+      <dependency id="demo3" />
+   </group>
+</dependencies>
