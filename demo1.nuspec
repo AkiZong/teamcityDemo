@@ -12,14 +12,18 @@
     <copyright>Copyright 2018 Peraso</copyright>
     <tags>Tag1</tags>
   </metadata>
+  
   <files>
     <file src="*.txt" target="lib" />
-	</files>
-</package>
+  </files>
 
-<dependencies> 
+  <dependencies> 
    <group>
       <dependency id="demo2" />
       <dependency id="demo3" />
    </group>
-</dependencies>
+  </dependencies>
+	
+</package>
+
+
