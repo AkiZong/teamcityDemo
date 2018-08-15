@@ -11,12 +11,6 @@
     <releaseNotes>Demo5</releaseNotes>
     <copyright>Copyright 2018 Peraso</copyright>
     <tags>Tag5</tags>
-	  
-    <dependencies>
-      <group>
-	<dependency id="demo1" />
-      </group>
-    </dependencies>
   </metadata>
   <files>
     <file src="*.txt" target="lib" />
