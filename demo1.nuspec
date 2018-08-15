@@ -16,13 +16,6 @@
   <files>
     <file src="*.txt" target="lib" />
   </files>
-
-  <dependencies> 
-   <group>
-      <dependency id="demo2" />
-      <dependency id="demo3" />
-   </group>
-  </dependencies>
 	
 </package>
 
