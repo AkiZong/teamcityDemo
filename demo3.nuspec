@@ -14,7 +14,6 @@
 	  
     <dependencies>
       <group>
-        <dependency id="demo2" />
 	<dependency id="demo4" />
 	<dependency id="demo5" />
       </group>
