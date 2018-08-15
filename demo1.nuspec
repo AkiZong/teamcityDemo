@@ -15,8 +15,9 @@
     <dependencies>
       <group>
         <dependency id="demo2" />
+	<dependency id="demo3" />
       </group>
-	  </dependencies>
+    </dependencies>
   </metadata>
   
   <files>
