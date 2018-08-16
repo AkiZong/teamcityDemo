@@ -15,12 +15,15 @@
     <copyright>Copyright 2018 Peraso Technologies Inc.</copyright>
     <tags>Tag1</tags>
 
-    <!-- Create dependencies if this package depends on other package(s) -->
-    <!-- avoid circular dependency -->
+    <!-- Create dependencies if this package depends on other package(s).
+         Avoid circular dependency -->
     <dependencies>
       <group>
-        <!-- nupkg demo2 and demo3 must be created before installing/downloading demo1 -->
-        <dependency id="demo2" /> 
+        <!-- .nupkg demo2 and demo3 must be created before installing/downloading demo1
+             Each dependency has attributes of id, version... 
+             We currently use the highest version which is defined in NuGet.Config -->
+        <!-- <dependency id="demo2" version="1.0.0" />  -->
+        <dependency id="demo2" />
 	      <dependency id="demo3" />
       </group>
     </dependencies>
