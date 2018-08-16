@@ -1,16 +1,18 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <package >
   <metadata>
+    <!-- Required elements -->
     <id>demo1</id>
     <version>1.0.0</version>
-    <title>TeamCity NuGet Demo</title>
+    <description>Create NuGet package for Component-demo1 on TeamCity</description>
     <authors>Aki</authors>
-    <owners></owners>
+
+    <!-- <title>Component-demo1</title>
+    <owners>Peraso Technologies Inc.</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Test TeamCity and NuGet</description>
     <releaseNotes>Demo1</releaseNotes>
-    <copyright>Copyright 2018 Peraso</copyright>
-    <tags>Tag1</tags>
+    <copyright>Copyright 2018 Peraso Technologies Inc.</copyright>
+    <tags>Tag1</tags> -->
 
     <dependencies>
       <group>
@@ -25,5 +27,8 @@
   </files>
 	
 </package>
+
+
+
 
 
