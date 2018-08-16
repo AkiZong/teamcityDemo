@@ -1,3 +1,4 @@
+<!-- each package needs a .nuspec file -->
 <?xml version="1.0"?>
 <package >
   <metadata>
@@ -7,28 +8,28 @@
     <description>Create NuGet package for Component-demo1 on TeamCity</description>
     <authors>Aki</authors>
 
-    <!-- <title>Component-demo1</title>
+    <!-- Optional elements -->
+    <title>Component-demo1</title>
     <owners>Peraso Technologies Inc.</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>Demo1</releaseNotes>
     <copyright>Copyright 2018 Peraso Technologies Inc.</copyright>
-    <tags>Tag1</tags> -->
+    <tags>Tag1</tags>
 
+    <!-- Create dependencies if this package depends on other package(s) -->
+    <!-- avoid circular dependency -->
     <dependencies>
       <group>
-        <dependency id="demo2" />
+        <!-- nupkg demo2 and demo3 must be created before installing/downloading demo1 -->
+        <dependency id="demo2" /> 
 	      <dependency id="demo3" />
       </group>
     </dependencies>
   </metadata>
   
+  <!-- specify which assembly and content files to include in the package -->
   <files>
-    <file src="*.txt" target="lib" />
+    <file src="*.txt" />
   </files>
 	
 </package>
-
-
-
-
-
