@@ -12,12 +12,12 @@
     <copyright>Copyright 2018 Peraso</copyright>
     <tags>Tag1</tags>
 
-<!--     <dependencies>
+    <dependencies>
       <group>
         <dependency id="demo2" />
 	      <dependency id="demo3" />
       </group>
-    </dependencies> -->
+    </dependencies>
   </metadata>
   
   <files>
