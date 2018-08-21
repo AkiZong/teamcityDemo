@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <!-- Required elements -->
-    <id>demo1</id>
+    <id>comp1</id>
     <version>1.0.0</version>
     <description>Create NuGet package for Component-demo1 on TeamCity</description>
     <authors>Aki</authors>
@@ -23,7 +23,7 @@
              Each dependency has attributes of id, version... 
              We currently use the highest version which is defined in NuGet.Config -->
         <!-- <dependency id="demo2" version="1.0.0" />  -->
-        <dependency id="demo2" />
+        <dependency id="comp2" />
       </group>
     </dependencies>
   </metadata>
