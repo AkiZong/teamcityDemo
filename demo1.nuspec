@@ -24,7 +24,6 @@
              We currently use the highest version which is defined in NuGet.Config -->
         <!-- <dependency id="demo2" version="1.0.0" />  -->
         <dependency id="demo2" />
-	      <dependency id="demo3" />
       </group>
     </dependencies>
   </metadata>
