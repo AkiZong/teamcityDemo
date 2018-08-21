@@ -17,15 +17,15 @@
 
     <!-- Create dependencies if this package depends on other package(s).
          Avoid circular dependency -->
-    <dependencies>
-      <group>
+<!--     <dependencies>
+      <group> -->
         <!-- .nupkg demo2 and demo3 must be created before installing/downloading demo1
              Each dependency has attributes of id, version... 
              We currently use the highest version which is defined in NuGet.Config -->
         <!-- <dependency id="demo2" version="1.0.0" />  -->
-        <dependency id="comp2" />
-      </group>
-    </dependencies>
+<!--         <dependency id="comp2" /> -->
+<!--       </group>
+    </dependencies> -->
   </metadata>
   
   <!-- specify which assembly and content files to include in the package -->
