@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <!-- Required elements -->
+    <id>comp3</id>
+    <version>1.0.0</version>
+    <description>Create NuGet package for Component-3 on TeamCity</description>
+    <authors>Aki</authors>
+
+    <!-- Optional elements -->
+    <title>Component-3</title>
+    <owners>Peraso Technologies Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Component-3</releaseNotes>
+    <copyright>Copyright 2018 Peraso Technologies Inc.</copyright>
+    <tags>Tag1</tags>
+
+  </metadata>
+
+  <files>
+    <file src="*.txt" />
+  </files>
+	
+</package>
