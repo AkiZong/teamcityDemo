@@ -8,6 +8,7 @@ import shutil
 from tempfile import mkstemp
 from shutil import move
 from os import fdopen, remove
+import re
 
 
 def replaceVersion (nuspec_path, new_version):
@@ -15,7 +16,8 @@ def replaceVersion (nuspec_path, new_version):
     with fdopen(fh, 'w') as new_file:
         with open(nuspec_path) as old_file:
             for line in old_file:
-                new_file.write(line.replace('<version>1.0.0</version>', '<version>'+new_version+'</version>'))
+            	line = re.sub(r'<version>\d.\d.\d</version>', '<version>'+new_version+'</version>', line)
+                new_file.write(line)
     remove(nuspec_path)
     move(abs_path, nuspec_path)
 
@@ -45,5 +47,3 @@ if __name__ == "__main__":
 	replaceVersion(args.nuspec, args.new_version)
 	nugetPack(args.nuspec)
 	copyNupkg(args.nupkg_id, args.new_version)
-
-	
