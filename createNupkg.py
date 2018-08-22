@@ -40,6 +40,13 @@ if __name__ == "__main__":
 	# argv[1] - nuspec_path
 	# argv[2] - new_version
 	# argv[3] - nuspkg_id
+	cmd = '$env:path="$env:Path;C:/Python27"'
+	os.system(cmd)
+
+	cmd = 'python -m pip install requests'
+	os.system(cmd)
+
+
 	replaceVersion(sys.argv[1], sys.argv[2])
 	nugetPack(sys.argv[1])
 	copyNupkg(sys.argv[3], sys.argv[2])
