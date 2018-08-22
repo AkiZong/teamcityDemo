@@ -45,3 +45,5 @@ if __name__ == "__main__":
 	replaceVersion(args.nuspec, args.new_version)
 	nugetPack(args.nuspec)
 	copyNupkg(args.nupkg_id, args.new_version)
+
+	
