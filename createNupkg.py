@@ -20,35 +20,28 @@ def replaceVersion (nuspec_path, new_version):
     move(abs_path, nuspec_path)
 
 def nugetPack (nuspec_path):
-	# cmd = 'C:/Users/bzong/Desktop/installPkg/nuget.exe pack ' + nuspec_path
 	cmd = 'C:/TeamCity/buildAgent/tools/NuGet.CommandLine.4.7.1/tools/NuGet.exe pack ' + nuspec_path
 	os.system(cmd)
 
-def copyNupkg (nuspkg_id, new_version):
+def copyNupkg (nupkg_id, new_version):
 	if os.path.exists('package'):
 		shutil.rmtree('package')
 
 	cmd = 'mkdir package'
 	os.system(cmd)
 
-	nuspkg = nuspkg_id + '.' + new_version + '.nupkg'
-	cmd = 'xcopy /Y ' + nuspkg + ' package'
+	nupkg = nupkg_id + '.' + new_version + '.nupkg'
+	cmd = 'xcopy /Y ' + nupkg + ' package'
 	os.system(cmd)
 
-
 if __name__ == "__main__":
-	for arg in sys.argv[1:]:
-		print arg
+	parser = argparse.ArgumentParser(description="Generate NuGet package in TeamCity.")
+	parser.add_argument("--nuspec", help="path of .nuspec file")
+	parser.add_argument("--new_version", help="new version of nupkg")
+	parser.add_argument("--nupkg_id", help="Nupkg ID")
 
-	# argv[1] - nuspec_path
-	# argv[2] - new_version
-	# argv[3] - nuspkg_id
+	args = parser.parse_args()
 
-
-	replaceVersion(sys.argv[1], sys.argv[2])
-	nugetPack(sys.argv[1])
-	copyNupkg(sys.argv[3], sys.argv[2])
-
-
-
-
+	replaceVersion(args.nuspec, args.new_version)
+	nugetPack(args.nuspec)
+	copyNupkg(args.nupkg_id, args.new_version)
