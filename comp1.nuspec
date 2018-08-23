@@ -17,8 +17,8 @@
 
     <dependencies>
       <group>
-        <dependency id="comp2" />
-        <dependency id="comp3" />
+        <dependency id="comp2" version=""/>
+        <dependency id="comp3" version=""/>
       </group>
     </dependencies>
   </metadata>
