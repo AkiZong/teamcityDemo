@@ -19,7 +19,7 @@ def replaceVersion (nuspec_path, new_version, branch):
 		with open(nuspec_path) as old_file:
 			for line in old_file:
 				line = re.sub(r'version=""', 'version="(' + str(lowBranch) + ',' + str(highBranch) + ')"', line)
-				line = re.sub(r'<version>\d.\d.\d</version>', '<version>' + new_version + '</version>', line)
+				line = re.sub(r'<version>.*</version>', '<version>' + new_version + '</version>', line)
 				new_file.write(line)
 	remove(nuspec_path)
 	move(abs_path, nuspec_path)
