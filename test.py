@@ -14,6 +14,10 @@ def main():
     f = open("test.txt", "w+")
     f.write("This is test.")
     f.close()
+    
+    # clean output directory
+    if os.path.exists('Test'):
+        shutil.rmtree('Test')
 
 
 if __name__== "__main__":
