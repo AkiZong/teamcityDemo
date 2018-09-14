@@ -11,13 +11,14 @@ from os import fdopen, remove
 import re
 
 def main():
+    
+    # clean output directory
+    if os.path.exists('CompForTest'):
+        shutil.rmtree('CompForTest')
+        
     f = open("branch23.txt", "w+")
     f.write("This is component from branch 2.3.")
     f.close()
-    
-    # clean output directory
-    if os.path.exists('Test'):
-        shutil.rmtree('Test')
 
 
 if __name__== "__main__":
