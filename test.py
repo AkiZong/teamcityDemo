@@ -11,17 +11,15 @@ from os import fdopen, remove
 import re
 
 def main():
-    
+        
     # clean output directory
     if os.path.exists('Test'):
         shutil.rmtree('Test')
         
     f = open("test22.txt", "w+")
-    f.write("This is test of branch 2.2.")
+    f.write("This is test for branch 2.2.")
     f.close()
     
-    
-
 
 if __name__== "__main__":
     main()
